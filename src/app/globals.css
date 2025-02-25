@@ -19,3 +19,14 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 768px) {
+  .parallax-layer {
+    height: 80vh;  /* تقليل الارتفاع على الجوال */
+  }
+
+  .parallax-layer img {
+    background-size: cover;
+    background-position: center;
+  }
+}
