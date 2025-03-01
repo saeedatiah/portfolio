@@ -6,6 +6,7 @@ import Experince from './Experince';
 import Projects from './Projects2';
 import Skills from './Skills';
 import SocialMedia from './SocialMedia';
+import CircularCards from '../components/CircularCards';
 
 const Homee = () => {
   const parallax = useRef(null);  // التأكد من أن `parallax` هو `ref` صالح
@@ -83,7 +84,52 @@ const Homee = () => {
       </ParallaxLayer>
 
       <ParallaxLayer
+        offset={3.5}
+        speed={1.5}
+        onClick={() => parallax.current.scrollTo(1)}
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+        <div className='w-full '>
+        <div className='w-full text-5xl py-8  inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] '>
+        <ul className='flex items-center justify-center md:justify-start sm:[&_li]:mx-8 [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll-reverse'>
+
+        <li>aaaaaaaa</li>
+        <li>bbbb</li><li>aaaaaaaa</li>
+        <li>bbbb</li><li>aaaaaaaa</li>
+        <li>bbbb</li><li>aaaaaaaa</li>
+        <li>bbbb</li><li>aaaaaaaa</li>
+        <li>bbbb</li><li>aaaaaaaa</li>
+        <li>bbbb</li><li>aaaaaaaa</li>
+        <li>bbbb</li><li>aaaaaaaa</li>
+        <li>bbbb</li><li>aaaaaaaa</li>
+        <li>bbbb</li><li>aaaaaaaa</li>
+        <li>bbbb</li><li>aaaaaaaa</li>
+        <li>bbbb</li>
+        <li>aaaaaaaa</li>
+        </ul>
+        </div>
+        </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer
         offset={4}
+        speed={1.5}
+        onClick={() => parallax.current.scrollTo(1)}
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+        <div className='w-full bg-amber-600 '>
+        <CircularCards/>
+        </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer
+        offset={5}
         speed={1.5}
         onClick={() => parallax.current.scrollTo(1)}
         style={{
