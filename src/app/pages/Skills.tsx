@@ -96,12 +96,12 @@ const Skills = () => {
     //     <SkillCard key={index} name={skill.name} level={skill.level} color={skill.color} index={index} />
     //   ))}
     // </div>
-    <div>
+    <div className='h-full'>
       <TimeLine>
         <TimeLineCard 
         title="Next" 
         desc="With Next.js, I have gained expertise in building server-rendered, static, and hybrid React applications. I understand the distinction between client-side and server-side components, and I can leverage Next.js's file-based routing to create optimized navigation and content delivery. I'm also familiar with the latest version, Next.js 14, which introduces enhanced performance through Server Components and improved developer experience with features like Layouts and Streaming"
-        color=""/>
+        color="#333333"/>
 
         <TimeLineCard 
         title="TypeScript" 
@@ -119,6 +119,37 @@ const Skills = () => {
         color=""/>
 
       <TimeLineCard 
+        title="React" 
+        desc="With React.js, I have developed a strong grasp of component-based architecture, state management, and the virtual DOM. I can efficiently create reusable UI components, manage component lifecycles, and handle user interactions. Additionally, I am familiar with popular React.js libraries and tools, such as React Router and Redux, which allow me to build scalable and maintainable web applications with a focus on performance and developer experience"
+        color=""/>
+        <TimeLineCard 
+        title="React" 
+        desc="With React.js, I have developed a strong grasp of component-based architecture, state management, and the virtual DOM. I can efficiently create reusable UI components, manage component lifecycles, and handle user interactions. Additionally, I am familiar with popular React.js libraries and tools, such as React Router and Redux, which allow me to build scalable and maintainable web applications with a focus on performance and developer experience"
+        color=""/>
+        <TimeLineCard 
+        title="React" 
+        desc="With React.js, I have developed a strong grasp of component-based architecture, state management, and the virtual DOM. I can efficiently create reusable UI components, manage component lifecycles, and handle user interactions. Additionally, I am familiar with popular React.js libraries and tools, such as React Router and Redux, which allow me to build scalable and maintainable web applications with a focus on performance and developer experience"
+        color=""/>
+        <TimeLineCard 
+        title="React" 
+        desc="With React.js, I have developed a strong grasp of component-based architecture, state management, and the virtual DOM. I can efficiently create reusable UI components, manage component lifecycles, and handle user interactions. Additionally, I am familiar with popular React.js libraries and tools, such as React Router and Redux, which allow me to build scalable and maintainable web applications with a focus on performance and developer experience"
+        color=""/>
+        <TimeLineCard 
+        title="React" 
+        desc="With React.js, I have developed a strong grasp of component-based architecture, state management, and the virtual DOM. I can efficiently create reusable UI components, manage component lifecycles, and handle user interactions. Additionally, I am familiar with popular React.js libraries and tools, such as React Router and Redux, which allow me to build scalable and maintainable web applications with a focus on performance and developer experience"
+        color=""/>
+
+<TimeLineCard 
+        title="CSS" 
+        desc="In CSS, I have learned how to create responsive layouts using techniques like media queries, grid, and flexbox. I understand the importance of cascading styles, selectors, and property inheritance to build visually appealing and user-friendly interfaces"
+        color=""/>
+
+<TimeLineCard 
+        title="Next" 
+        desc=""
+        color=""/>
+
+<TimeLineCard 
         title="Next" 
         desc=""
         color=""/>
