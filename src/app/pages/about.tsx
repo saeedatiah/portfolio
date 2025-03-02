@@ -3,19 +3,23 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material';
 import MainCard from '../components/MainCard';
+import Screen from '../components/Screen';
 
 const About = () => {
   return (
-    <MainCard>
-    <div className="text-center max-w-3xl mx-auto">
-      <Typography variant="h3" className="font-bold mb-4 drop-shadow-2xl">
-        من أنا؟
-      </Typography>
-      <Typography className='drop-shadow-[6px_6px_12px_rgba(0,0,0,1)]' variant="body1" paragraph>
-        أنا مطور ويب بخبرة في استخدام **React** و **Next.js** لبناء تطبيقات الويب التفاعلية. أتمتع بخبرة واسعة في تصميم واجهات المستخدم وتجربة المستخدم، مع التركيز على الأداء والتحسين.
-      </Typography>
-    </div>
+    <div className='flex justify-center items-center flex-col m-6'>
+    <MainCard className='rounded-full w-36 bg-slate-600 aspect-square md:w-20'>
+      img
     </MainCard>
+    {/* <Screen text='hi, \n I am Saeed'/> */}
+    <MainCard>
+    I am Saeed Abdullah, a front-end web developer specializing in the creation of user-friendly and responsive web applications.
+     My expertise lies in developing intuitive interfaces and ensuring optimal user experiences across various devices.
+      I excel in collaborative environments,
+       contributing to the development of scalable and accessible software solutions that meet both user needs and industry standards
+    </MainCard>
+    </div>
+  
     
   )
 }

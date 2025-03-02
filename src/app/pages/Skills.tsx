@@ -1,5 +1,7 @@
 'use client'
 import { motion } from 'framer-motion';
+import TimeLine from '../components/TimeLine/TimeLine';
+import TimeLineCard from '../components/TimeLine/TimeLineCard';
 
 const technicalSkills = [
   { name: 'React', level: 90, color: '#61DBFB' },
@@ -65,34 +67,65 @@ const SkillCard = ({ name, level, color, index }: { name: string; level: number;
 
 const Skills = () => {
   return (
-    <div className="grid grid-cols-3 gap-8 py-8">
-      <div className="col-span-3 text-center mb-8">
-        <motion.h2
-          className="text-4xl font-bold"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          Technical Skills
-        </motion.h2>
-      </div>
-      {technicalSkills.map((skill, index) => (
-        <SkillCard key={index} name={skill.name} level={skill.level} color={skill.color} index={index} />
-      ))}
+    // <div className="grid grid-cols-3 gap-8 py-8">
+    //   <div className="col-span-3 text-center mb-8">
+    //     <motion.h2
+    //       className="text-4xl font-bold"
+    //       initial={{ opacity: 0 }}
+    //       animate={{ opacity: 1 }}
+    //       transition={{ duration: 1 }}
+    //     >
+    //       Technical Skills
+    //     </motion.h2>
+    //   </div>
+    //   {technicalSkills.map((skill, index) => (
+    //     <SkillCard key={index} name={skill.name} level={skill.level} color={skill.color} index={index} />
+    //   ))}
       
-      <div className="col-span-3 text-center mb-8 mt-16">
-        <motion.h2
-          className="text-4xl font-bold"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          Soft Skills
-        </motion.h2>
-      </div>
-      {softSkills.map((skill, index) => (
-        <SkillCard key={index} name={skill.name} level={skill.level} color={skill.color} index={index} />
-      ))}
+    //   <div className="col-span-3 text-center mb-8 mt-16">
+    //     <motion.h2
+    //       className="text-4xl font-bold"
+    //       initial={{ opacity: 0 }}
+    //       animate={{ opacity: 1 }}
+    //       transition={{ duration: 1 }}
+    //     >
+    //       Soft Skills
+    //     </motion.h2>
+    //   </div>
+    //   {softSkills.map((skill, index) => (
+    //     <SkillCard key={index} name={skill.name} level={skill.level} color={skill.color} index={index} />
+    //   ))}
+    // </div>
+    <div>
+      <TimeLine>
+        <TimeLineCard 
+        title="Next" 
+        desc="With Next.js, I have gained expertise in building server-rendered, static, and hybrid React applications. I understand the distinction between client-side and server-side components, and I can leverage Next.js's file-based routing to create optimized navigation and content delivery. I'm also familiar with the latest version, Next.js 14, which introduces enhanced performance through Server Components and improved developer experience with features like Layouts and Streaming"
+        color=""/>
+
+        <TimeLineCard 
+        title="TypeScript" 
+        desc="With TypeScript, I have gained a robust understanding of static type systems and their benefits in building large-scale, maintainable applications. I can confidently leverage TypeScript's type annotations, interfaces, and classes to write code that is more reliable, easier to refactor, and better documented"
+        color=""/>
+
+        <TimeLineCard 
+        title="Git" 
+        desc="With Git, I have gained a deep understanding of version control systems and collaborative development workflows. I can confidently use Git commands to manage code repositories, track changes, and collaborate with team members. I am well-versed in branching and merging strategies, resolving conflicts"
+        color=""/>
+
+      <TimeLineCard 
+        title="Tailwind CSS" 
+        desc="With Tailwind CSS, I have developed a deep understanding of utility-first CSS. I can efficiently build responsive and customized user interfaces by composing low-level utility classes, rather than relying on pre-defined styles. I appreciate Tailwind's flexibility, which allows me to rapidly prototype and iterate on design concepts"
+        color=""/>
+
+      <TimeLineCard 
+        title="Next" 
+        desc=""
+        color=""/>
+
+
+
+      </TimeLine>
     </div>
   );
 };
